@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Ceibal </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+</style>
+</head>
+<body background="imagenes/1.jpg"> <!-- Acá agregue la foto -->
+   
+<div class="container">
+  <h2> Coordinación Despliegue // GPA </h2>
+
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">  Telecomunicaciones  
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#"> Inicio </a></li>
+
+<!-- OBJETIVOS -->
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#"> Objetivos <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <a class="test" tabindex="-1" href="#"> Alta Performance <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#"> Altas Completas </a></li>
+                  <li><a tabindex="-1" href="#"> Altas Incompletas </a></li>
+                  <li><a tabindex="-1" href="#"> Altas Fallidas </a></li>
+                  <li><a tabindex="-1" href="#"> Pendientes </a></li>
+               </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="test" tabindex="-1" href="#">  Videoconferencia <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#"> Altas Completas </a></li>
+                  <li><a tabindex="-1" href="#"> Altas Incompletas </a></li>
+                  <li><a tabindex="-1" href="#"> Altas Fallidas </a></li>
+                  <li><a tabindex="-1" href="#"> Pendientes </a></li>
+               </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="test" tabindex="-1" href="#"> Mantenimiento Outdoor <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#"> Completas </a></li>
+                  <li><a tabindex="-1" href="#">  Incompletas </a></li>
+                  <li><a tabindex="-1" href="#"> Pendientes </a></li>
+               </ul>
+            </li>
+          </ul>
+      </li>
+
+<!-- SERVICIOS -->      
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#"> Servicios <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <a class="test" tabindex="-1" href="#"> Conectividad <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#"> OTs </a></li>
+                  <li><a tabindex="-1" href="#"> Facturas </a></li>
+                </ul>
+            </li>
+            <li class="dropdown-submenu">
+            <a class="test" tabindex="-1" href="#"> Soporte <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#"> OTs </a></li>
+                <li><a tabindex="-1" href="#"> Facturas </a></li>
+              </ul>
+            </li>
+          </ul>
+      </li>
+
+<!-- EMPRESAS -->
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#"> Empresas <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a tabindex="-1" href="#"> Ceibal </a></li>
+            <li><a tabindex="-1" href="#"> ITSS </a></li>
+            <li><a tabindex="-1" href="#"> Tecnoshoot </a></li>
+            <li><a tabindex="-1" href="#"> Avance </a></li>
+            <li><a tabindex="-1" href="#"> Macrodata </a></li>
+            <li><a tabindex="-1" href="#"> Terabits </a></li>
+            <li><a tabindex="-1" href="#"> Servicio Chip </a></li>
+            <li><a tabindex="-1" href="#"> OL Artigas </a></li>
+            <li><a tabindex="-1" href="#"> OL Salto </a></li>
+            <li><a tabindex="-1" href="#"> OL Paysandu </a></li> 
+            <li><a tabindex="-1" href="#"> Sipa </a></li> 
+            <li><a tabindex="-1" href="#"> Efeuno </a></li>
+            <li><a tabindex="-1" href="#"> Skynet </a></li> 
+            <li><a tabindex="-1" href="#"> Movil Durazno </a></li> 
+            <li><a tabindex="-1" href="#"> Movil Soporte </a></li> 
+          </ul>
+      </li>
+
+<!-- CONTABILIDAD -->
+        <li class="dropdown-submenu">
+          <a class="test" tabindex="-1" href="#"> Contabilidad <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-submenu"></li>
+                <a class="test" tabindex="-1" href="#"> Facturación <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#"> Enero </a></li>
+                    <li><a tabindex="-1" href="#"> Febrero </a></li>
+                    <li><a tabindex="-1" href="#"> Marzo </a></li>
+                    <li><a tabindex="-1" href="#"> Abril </a></li>
+                  </ul>
+            </ul>
+        </li>
+        
+    </ul>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
+
+</body>
+</html>
+
+
+
+<!--
+** Así AGREGO UN MENÚ PRINCIPAL con SUBMENUS e ITEMs **
+<li class="dropdown-submenu">
+  <a class="test" tabindex="-1" href="#"> ** MENÚ PRINCIPAL ** <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li class="dropdown-submenu"></li>
+        <a class="test" tabindex="-1" href="#"> ** SUBMENÚ ** <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a tabindex="-1" href="#"> ** ITEM 1 ** </a></li>
+            <li><a tabindex="-1" href="#"> ** ITEM 2 ** </a></li>
+            <li><a tabindex="-1" href="#"> ** ITEM 3 ** </a></li>
+            <li><a tabindex="-1" href="#"> ** ITEM 4 ** </a></li>
+          </ul>
+      </li>
+    </ul>
+</li>
+-->
+
+<!--
+** Así AGREGO 1- SUBMENUS con Items **
+<li class="dropdown-submenu">
+  <a class="test" tabindex="-1" href="#"> ** SUBMENÚ ** <span class="caret"></span></a>
+    <ul class="dropdown-menu">
+      <li><a tabindex="-1" href="#"> ** ITEM 1 ** </a></li>
+      <li><a tabindex="-1" href="#"> ** ITEM 2 ** </a></li>
+      <li><a tabindex="-1" href="#"> ** ITEM 3 ** </a></li>
+      <li><a tabindex="-1" href="#"> ** ITEM 4 ** </a></li>
+    </ul>
+</li>

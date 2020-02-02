@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+
+        <title> Show // Hide form </title>
+        <script src="jquery-3.4.1.js"></script>
+
+    </head>
+
+    <Body>
+
+        <div class="container">
+            <form class="myForm">
+                <p>
+                    User: <input type="text">
+                </p>
+                <p>
+                    Password: <input type="password">
+                </p>
+            </form>
+
+            <button id="myButton" onclick="ShowHideElement()"> Show form </button>
+
+        </div>
+
+        <!-- Scripts -->
+        <script type="text/javascript">
+
+            $(".myForm").hide(); // lo primero que sucedera
+
+            function ShowHideElement(){
+                let text = "";
+                if($("#myButton").text() === "Show form") {
+                    $(".myForm").show();
+                    text = "Hide form";
+            }
+                else{
+                    $(".myForm").hide();
+                    text = "Show form";
+                }
+
+            $("#myButton").html(text);
+            }
+
+        </script>
+    </Body>
+</Html>

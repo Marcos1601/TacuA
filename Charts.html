@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script type="text/javascript" src="https://wwww.google.com/jsapi"></script>
+        <script type="text/javascript">
+        
+        google.load('visualization','1.0',{'packages';['corechart']});
+        google.setOnLoadCallblack(dibujar);
+
+        function dibujar()
+        {
+            var data = new  google.visualization.DataTable();
+            data.addColumn('string','Ciudad');
+            data.addColumn('number','visitas')
+            data.AddRows([
+                ['Montevideo', 500]
+                ['Tacuarembó', 700]
+                ['Durazno', 200]
+                ['Salto', 300]
+                ['Soriano', 400]
+                ]);
+            var opciones = {'title':'visitas a la Web',
+                            'width':500,
+                            'height':300};
+
+            var grafica = new google.visualization.AreaChart(document.getElementById('Charts'));
+            grafica.draw(data,opciones)
+        }        
+        
+        
+        </script>
+    </head>
+    <body>
+        <div id="Charts"> </div>
+    </body>
+</html>
